@@ -1,0 +1,10 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: darkblue;
+  padding: 1rem;
+  font-size: 18pt;
+}
