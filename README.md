@@ -8,6 +8,8 @@
 
 Pequena wiki sobre as 3 gerações do romantismo em verso no Brasil feita com HTML, CSS e JavaScript como trabalho para as diciplinas de _Técnicas de Desenvolvimento de Software I_ e _Lingua Portuguesa e Literatura II_.
 
+Acesse o site [aqui](https://davi-furtado.github.io/wiki-romantica)
+
 ## Autores
 
 - Davi Reis Furtado
