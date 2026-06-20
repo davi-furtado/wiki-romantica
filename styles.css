@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -7,20 +8,29 @@ body {
   color: #fff;
 }
 
+a {
+  color: #999;
+}
+
 header {
   background-color: darkblue;
   padding: 1rem;
 }
 
-header span {
+span {
   font-size: 18pt;
   width: 25%;
   float: left;
 }
 
-header nav {
-  width: 25%;
+nav {
+  text-align: right;
+  width: 75%;
   float: right;
+}
+
+header nav a {
+  padding: 8px;
 }
 
 header::after {
