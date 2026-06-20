@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -6,5 +10,25 @@ body {
 header {
   background-color: darkblue;
   padding: 1rem;
+}
+
+header span {
   font-size: 18pt;
+  width: 25%;
+  float: left;
+}
+
+header nav {
+  width: 25%;
+  float: right;
+}
+
+header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.principal {
+  clear: both;
 }
