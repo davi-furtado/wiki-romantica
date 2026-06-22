@@ -1,44 +1,162 @@
 * {
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #000;
+  background-color: #0a0a0a;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
   color: #fff;
 }
 
-a {
-  color: #999;
-}
-
+/* HEADER */
 header {
-  background-color: darkblue;
+  background-color: #0d1b4c;
   padding: 1rem;
 }
 
-span {
-  font-size: 18pt;
-  width: 25%;
+/* TÍTULO */
+header span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 30%;
   float: left;
 }
 
+/* MENU */
 nav {
-  text-align: right;
-  width: 75%;
+  width: 70%;
   float: right;
+  text-align: right;
 }
 
 header nav a {
-  padding: 8px;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 6px;
 }
 
+/* LINK ATUAL DO MENU */
+.atual {
+  background-color: #1c2fa3;
+  color: #fff;
+}
+
+/* CLEAR FIX HEADER */
 header::after {
   content: '';
   display: block;
   clear: both;
 }
 
-.principal {
+/* ---------- PAGE LAYOUT ---------- */
+
+/* SIDEBAR */
+.sidebar {
+  width: 25%;
+  float: left;
+  padding: 1rem;
+  background-color: #111;
+  min-height: 500px;
+  border-right: 1px solid #222;
+}
+
+.sidebar h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+/* LISTA */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 4px;
+}
+
+/* LINKS SIDEBAR */
+.sidebar a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* HOVER */
+.sidebar a:hover {
+  background-color: #1c2fa3;
+  transform: translateX(6px);
+  color: #fff;
+}
+
+/* LINK ATIVO */
+.sidebar a.ativo {
+  background-color: #2e44ff;
+  color: #fff;
+  transform: translateX(10px);
+  font-weight: bold;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  width: 75%;
+  float: right;
+  padding: 2rem;
+}
+
+/* TEXTO */
+.conteudo h1 {
+  margin-bottom: 1rem;
+}
+
+.conteudo p {
+  margin-bottom: 1rem;
+}
+
+.conteudo ul {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+/* CLEAR FLOAT DO LAYOUT */
+.conteudo::after {
+  content: '';
+  display: block;
   clear: both;
+}
+
+/* FOOTER */
+footer {
+  clear: both;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #111;
+  border-top: 1px solid #222;
+}
+
+footer h4 {
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin: 0.4rem 0;
 }
