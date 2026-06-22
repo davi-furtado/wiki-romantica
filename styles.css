@@ -49,7 +49,7 @@ header nav a {
   border-radius: 6px;
 }
 
-/* LINK ATUAL DO MENU */
+/* LINK ATUAL */
 .atual {
   background-color: #1c2fa3;
   color: #fff;
@@ -62,9 +62,15 @@ header::after {
   clear: both;
 }
 
-/* ---------- PAGE LAYOUT ---------- */
+/* ---------- HOME (IMPORTANTE) ---------- */
+.principal {
+  clear: both;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem; /* ✅ ESSA LINHA RESOLVE */
+}
 
-/* SIDEBAR */
+/* ---------- LAYOUT INTERNO ---------- */
 .sidebar {
   width: 25%;
   float: left;
@@ -81,7 +87,6 @@ header::after {
   text-transform: uppercase;
 }
 
-/* LISTA */
 .sidebar ul {
   list-style: none;
 }
@@ -90,7 +95,6 @@ header::after {
   margin-bottom: 4px;
 }
 
-/* LINKS SIDEBAR */
 .sidebar a {
   display: block;
   padding: 8px 10px;
@@ -98,14 +102,12 @@ header::after {
   font-size: 0.95rem;
 }
 
-/* HOVER */
 .sidebar a:hover {
   background-color: #1c2fa3;
   transform: translateX(6px);
   color: #fff;
 }
 
-/* LINK ATIVO */
 .sidebar a.ativo {
   background-color: #2e44ff;
   color: #fff;
@@ -133,7 +135,7 @@ header::after {
   margin: 1rem 0 1rem 1.5rem;
 }
 
-/* CLEAR FLOAT DO LAYOUT */
+/* CLEAR */
 .conteudo::after {
   content: '';
   display: block;
