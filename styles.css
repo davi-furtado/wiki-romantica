@@ -62,15 +62,25 @@ header::after {
   clear: both;
 }
 
-/* ---------- HOME (IMPORTANTE) ---------- */
+/* HOME */
 .principal {
   clear: both;
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem; /* ✅ ESSA LINHA RESOLVE */
+  padding: 2rem;
 }
 
-/* ---------- LAYOUT INTERNO ---------- */
+.principal h1 {
+  margin-bottom: 1rem;
+}
+
+.principal ul {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+/* LAYOUT INTERNO */
+
+/* SIDEBAR */
 .sidebar {
   width: 25%;
   float: left;
@@ -87,6 +97,7 @@ header::after {
   text-transform: uppercase;
 }
 
+/* LISTA */
 .sidebar ul {
   list-style: none;
 }
@@ -95,20 +106,24 @@ header::after {
   margin-bottom: 4px;
 }
 
+/* LINKS SIDEBAR */
 .sidebar a {
   display: block;
   padding: 8px 10px;
   border-radius: 6px;
   font-size: 0.95rem;
+  word-break: break-word;
 }
 
+/* HOVER */
 .sidebar a:hover {
   background-color: #1c2fa3;
   transform: translateX(6px);
   color: #fff;
 }
 
-.sidebar a.ativo {
+/* LINK ATIVO */
+.ativo {
   background-color: #2e44ff;
   color: #fff;
   transform: translateX(10px);
@@ -120,6 +135,7 @@ header::after {
   width: 75%;
   float: right;
   padding: 2rem;
+  word-wrap: break-word;
 }
 
 /* TEXTO */
@@ -161,4 +177,52 @@ footer ul {
 
 footer li {
   margin: 0.4rem 0;
+}
+
+/* TELAS MENORES  */
+
+@media (max-width: 800px) {
+  /* HEADER */
+  header span {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  /* SIDEBAR VIRA TOPO */
+  .sidebar {
+    width: 100%;
+    float: none;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #222;
+  }
+
+  /* CONTEÚDO ABAIXO */
+  .conteudo {
+    width: 100%;
+    float: none;
+    padding: 1.5rem;
+  }
+
+  .principal {
+    padding: 1.5rem;
+  }
+
+  /* FONTES */
+  .fontes li {
+    font-size: 0.9rem;
+  }
 }
