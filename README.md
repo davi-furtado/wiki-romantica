@@ -13,7 +13,6 @@ Acesse o site [aqui](https://davi-furtado.github.io/wiki-romantica)
 ## Adicionaremos posteriormente
 
 - Imagens
-- Curiosidades
 
 ## Autores
 
