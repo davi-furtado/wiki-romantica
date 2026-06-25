@@ -151,6 +151,28 @@ header::after {
   margin: 1rem 0 1rem 1.5rem;
 }
 
+/* FONTES */
+
+.fontes {
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+}
+
+.fontes li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.fontes a {
+  color: #9db4ff;
+  word-break: break-word; /* ✅ resolve mobile */
+}
+
+.fontes a:hover {
+  text-decoration: underline;
+}
+
 /* CLEAR */
 .conteudo::after {
   content: '';
@@ -179,8 +201,11 @@ footer li {
   margin: 0.4rem 0;
 }
 
-/* TELAS MENORES  */
+hr {
+  margin: 1rem 0;
+}
 
+/* TELAS MENORES  */
 @media (max-width: 800px) {
   /* HEADER */
   header span {
