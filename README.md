@@ -10,6 +10,11 @@ Pequena wiki sobre as 3 gerações do romantismo em verso no Brasil feita com HT
 
 Acesse o site [aqui](https://davi-furtado.github.io/wiki-romantica)
 
+## Adicionaremos posteriormente
+
+- Imagens
+- Curiosidades
+
 ## Autores
 
 - Davi Reis Furtado
