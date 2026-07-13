@@ -30,30 +30,46 @@
       <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
           <span class="navbar-brand mb-0 h1">Wiki Romântica</span>
-          <div
-            class="nav nav-pills ms-auto flex-wrap justify-content-end gap-1"
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
           >
-            <a
-              href="../"
-              class="nav-link"
-              >Início</a
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="mainNavbar"
+          >
+            <div
+              class="nav nav-pills ms-auto flex-column flex-lg-row justify-content-end gap-1 pt-3 pt-lg-0"
             >
-            <a
-              href="../geracao1/"
-              class="nav-link"
-              >1ª Geração</a
-            >
-            <a
-              href="."
-              class="nav-link atual"
-              aria-current="page"
-              >2ª Geração</a
-            >
-            <a
-              href="../geracao3/"
-              class="nav-link"
-              >3ª Geração</a
-            >
+              <a
+                href="../"
+                class="nav-link"
+                >Início</a
+              >
+              <a
+                href="../geracao1/"
+                class="nav-link"
+                >1ª Geração</a
+              >
+              <a
+                href="."
+                class="nav-link atual"
+                aria-current="page"
+                >2ª Geração</a
+              >
+              <a
+                href="../geracao3/"
+                class="nav-link"
+                >3ª Geração</a
+              >
+            </div>
           </div>
         </div>
       </nav>
