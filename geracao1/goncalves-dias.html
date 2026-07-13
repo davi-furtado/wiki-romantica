@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="pt-BR">
+<html
+  lang="pt-BR"
+  data-bs-theme="dark"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -11,121 +14,158 @@
 
     <link
       rel="stylesheet"
-      href="../css/styles.css"
+      href="../css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="../css/bootstrap.min.css"
+      href="../css/styles.css"
     />
     <link
       rel="icon"
       href="../favicon.ico"
     />
   </head>
-  <body>
-    <header>
-      <span>Wiki Romântica</span>
-      <nav>
-        <a href="../">Início</a>
-        <a
-          href="."
-          class="atual"
-          >1ª Geração</a
-        >
-        <a href="../geracao2/">2ª Geração</a>
-        <a href="../geracao3/">3ª Geração</a>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="site-header border-bottom border-secondary-subtle">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">Wiki Romântica</span>
+          <div
+            class="nav nav-pills ms-auto flex-wrap justify-content-end gap-1"
+          >
+            <a
+              href="../"
+              class="nav-link"
+              >Início</a
+            >
+            <a
+              href="."
+              class="nav-link atual"
+              aria-current="page"
+              >1ª Geração</a
+            >
+            <a
+              href="../geracao2/"
+              class="nav-link"
+              >2ª Geração</a
+            >
+            <a
+              href="../geracao3/"
+              class="nav-link"
+              >3ª Geração</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
+    <div class="container my-4 my-lg-5">
+      <div class="row g-4">
+        <aside class="col-12 col-lg-4 col-xl-3">
+          <div class="sidebar card border-secondary-subtle h-100">
+            <div class="card-body">
+              <a
+                href="."
+                class="list-group-item list-group-item-action"
+                >Sobre a 1ª geração</a
+              >
+              <h3>Autores</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">
+                  <a
+                    href="goncalves-dias.html"
+                    class="ativo"
+                    >Gonçalves Dias</a
+                  >
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="jose-de-alencar.html">José de Alencar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
 
-    <aside class="sidebar">
-      <a href=".">Sobre a 1ª geração</a>
-      <h3>Autores</h3>
-      <ul>
-        <li>
-          <a
-            href="goncalves-dias.html"
-            class="ativo"
-            >Gonçalves Dias</a
-          >
-        </li>
-        <li>
-          <a href="jose-de-alencar.html">José de Alencar</a>
-        </li>
-      </ul>
-    </aside>
+        <main class="col-12 col-lg-8 col-xl-9">
+          <section class="conteudo p-4 p-lg-5 rounded-4 shadow-sm">
+            <h1>Gonçalves Dias</h1>
 
-    <main class="conteudo">
-      <h1>Gonçalves Dias</h1>
+            <p>
+              <strong>Antônio Gonçalves Dias</strong> (1823–1864) foi um dos
+              principais poetas da primeira geração do romantismo brasileiro,
+              sendo amplamente reconhecido por sua contribuição ao nacionalismo
+              literário.
+            </p>
 
-      <p>
-        <strong>Antônio Gonçalves Dias</strong> (1823–1864) foi um dos
-        principais poetas da primeira geração do romantismo brasileiro, sendo
-        amplamente reconhecido por sua contribuição ao nacionalismo literário.
-      </p>
+            <p>
+              Sua obra possui forte valorização da natureza brasileira e do
+              indígena, retratado como um herói idealizado e símbolo da
+              identidade nacional.
+            </p>
 
-      <p>
-        Sua obra possui forte valorização da natureza brasileira e do indígena,
-        retratado como um herói idealizado e símbolo da identidade nacional.
-      </p>
+            <h2>Características</h2>
+            <ul>
+              <li>Nacionalismo</li>
+              <li>Indianismo</li>
+              <li>Exaltação da natureza</li>
+              <li>Linguagem lírica e emotiva</li>
+            </ul>
 
-      <h2>Características</h2>
-      <ul>
-        <li>Nacionalismo</li>
-        <li>Indianismo</li>
-        <li>Exaltação da natureza</li>
-        <li>Linguagem lírica e emotiva</li>
-      </ul>
+            <h2>Obra mais conhecida</h2>
+            <p>
+              Sua obra mais famosa é o poema <em>“Canção do Exílio”</em>, que
+              expressa a saudade da pátria e se tornou um dos textos mais
+              conhecidos da literatura brasileira.
+            </p>
 
-      <h2>Obra mais conhecida</h2>
-      <p>
-        Sua obra mais famosa é o poema <em>“Canção do Exílio”</em>, que expressa
-        a saudade da pátria e se tornou um dos textos mais conhecidos da
-        literatura brasileira.
-      </p>
+            <h2>Importância</h2>
+            <p>
+              Gonçalves Dias ajudou a consolidar uma identidade literária
+              brasileira, afastando-se dos modelos europeus e valorizando
+              elementos locais.
+            </p>
 
-      <h2>Importância</h2>
-      <p>
-        Gonçalves Dias ajudou a consolidar uma identidade literária brasileira,
-        afastando-se dos modelos europeus e valorizando elementos locais.
-      </p>
+            <h2>Curiosidade</h2>
+            <p>
+              Morreu em um naufrágio. O navio em que viajava, chamado Ville de
+              Boulogne, afundou próximo ao litoral do Maranhão em 1864.
+            </p>
 
-      <h2>Curiosidade</h2>
-      <p>
-        Morreu em um naufrágio. O navio em que viajava, chamado Ville de
-        Boulogne, afundou próximo ao litoral do Maranhão em 1864.
-      </p>
+            <hr />
+            <h2>Fontes</h2>
 
-      <hr />
-      <h2>Fontes</h2>
+            <ul class="fontes">
+              <li>
+                <a
+                  href="https://brasilescola.uol.com.br/literatura/goncalves-dias.htm"
+                  >Brasil Escola</a
+                >
+              </li>
+              <li>
+                <a href="https://www.todamateria.com.br/goncalves-dias/"
+                  >Toda Matéria</a
+                >
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
 
-      <ul class="fontes">
-        <li>
-          <a
-            href="https://brasilescola.uol.com.br/literatura/goncalves-dias.htm"
-            >Brasil Escola</a
-          >
-        </li>
-        <li>
-          <a href="https://www.todamateria.com.br/goncalves-dias/"
-            >Toda Matéria</a
-          >
-        </li>
-      </ul>
-    </main>
-
-    <footer>
-      <h4>Autores:</h4>
-      <ul>
-        <li>
-          Davi Reis Furtado [<a
-            href="https://github.com/davi-furtado"
-            target="-blank"
-            >Github</a
-          >]
-        </li>
-        <li>Nicolas Mangefeste Caldas</li>
-        <li>Arthur Figueiredo Mozella</li>
-      </ul>
+    <footer class="site-footer mt-auto border-top border-secondary-subtle py-4">
+      <div class="container">
+        <h4 class="h6 text-uppercase text-body-tertiary">Autores</h4>
+        <ul class="list-unstyled mb-0">
+          <li>
+            Davi Reis Furtado [<a
+              href="https://github.com/davi-furtado"
+              target="_blank"
+              >Github</a
+            >]
+          </li>
+          <li>Nicolas Mangefeste Caldas</li>
+          <li>Arthur Figueiredo Mozella</li>
+        </ul>
+      </div>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
   </body>

@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="pt-BR">
+<html
+  lang="pt-BR"
+  data-bs-theme="dark"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -11,11 +14,11 @@
 
     <link
       rel="stylesheet"
-      href="../css/styles.css"
+      href="../css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="../css/bootstrap.min.css"
+      href="../css/styles.css"
     />
     <link
       rel="icon"
@@ -23,115 +26,150 @@
     />
   </head>
 
-  <body>
-    <header>
-      <span>Wiki Romântica</span>
-      <nav>
-        <a href="../">Início</a>
-        <a href="../geracao1/">1ª Geração</a>
-        <a
-          href="."
-          class="atual"
-          >2ª Geração</a
-        >
-        <a href="../geracao3/">3ª Geração</a>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="site-header border-bottom border-secondary-subtle">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">Wiki Romântica</span>
+          <div
+            class="nav nav-pills ms-auto flex-wrap justify-content-end gap-1"
+          >
+            <a
+              href="../"
+              class="nav-link"
+              >Início</a
+            >
+            <a
+              href="../geracao1/"
+              class="nav-link"
+              >1ª Geração</a
+            >
+            <a
+              href="."
+              class="nav-link atual"
+              aria-current="page"
+              >2ª Geração</a
+            >
+            <a
+              href="../geracao3/"
+              class="nav-link"
+              >3ª Geração</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
+    <div class="container my-4 my-lg-5">
+      <div class="row g-4">
+        <aside class="col-12 col-lg-4 col-xl-3">
+          <div class="sidebar card border-secondary-subtle h-100">
+            <div class="card-body">
+              <a
+                href="."
+                class="list-group-item list-group-item-action"
+                >Sobre a 2ª geração</a
+              >
+              <h3>Autores</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">
+                  <a
+                    href="alvares-de-azevedo.html"
+                    class="ativo"
+                    >Álvares de Azevedo</a
+                  >
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="casimiro-de-abreu.html">Casimiro de Abreu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
 
-    <aside class="sidebar">
-      <a href=".">Sobre a 2ª geração</a>
-      <h3>Autores</h3>
-      <ul>
-        <li>
-          <a
-            href="alvares-de-azevedo.html"
-            class="ativo"
-            >Álvares de Azevedo</a
-          >
-        </li>
-        <li>
-          <a href="casimiro-de-abreu.html">Casimiro de Abreu</a>
-        </li>
-      </ul>
-    </aside>
+        <main class="col-12 col-lg-8 col-xl-9">
+          <section class="conteudo p-4 p-lg-5 rounded-4 shadow-sm">
+            <h1>Álvares de Azevedo</h1>
 
-    <main class="conteudo">
-      <h1>Álvares de Azevedo</h1>
+            <p>
+              <strong>Manuel Antônio Álvares de Azevedo</strong> (1831–1852) foi
+              um dos principais representantes da
+              <strong>segunda geração romântica</strong> no Brasil, sendo
+              considerado o maior nome do ultrarromantismo brasileiro.
+            </p>
 
-      <p>
-        <strong>Manuel Antônio Álvares de Azevedo</strong> (1831–1852) foi um
-        dos principais representantes da
-        <strong>segunda geração romântica</strong> no Brasil, sendo considerado
-        o maior nome do ultrarromantismo brasileiro.
-      </p>
+            <p>
+              Sua obra é marcada por forte influência do romantismo europeu,
+              especialmente de Lord Byron, e apresenta um profundo mergulho na
+              subjetividade, explorando temas como a dúvida, a morte e o amor
+              idealizado.
+            </p>
 
-      <p>
-        Sua obra é marcada por forte influência do romantismo europeu,
-        especialmente de Lord Byron, e apresenta um profundo mergulho na
-        subjetividade, explorando temas como a dúvida, a morte e o amor
-        idealizado.
-      </p>
+            <h2>Características</h2>
+            <ul>
+              <li>Subjetivismo intenso</li>
+              <li>Pessimismo e melancolia</li>
+              <li>Idealização amorosa</li>
+              <li>Fuga da realidade</li>
+              <li>Dualidade (vida x morte)</li>
+            </ul>
 
-      <h2>Características</h2>
-      <ul>
-        <li>Subjetivismo intenso</li>
-        <li>Pessimismo e melancolia</li>
-        <li>Idealização amorosa</li>
-        <li>Fuga da realidade</li>
-        <li>Dualidade (vida x morte)</li>
-      </ul>
+            <h2>Principal obra</h2>
+            <p>
+              Sua obra mais famosa é <em>“Lira dos Vinte Anos”</em>, uma
+              coletânea de poemas que revela tanto o idealismo amoroso quanto o
+              humor irônico e sombrio característico do autor.
+            </p>
 
-      <h2>Principal obra</h2>
-      <p>
-        Sua obra mais famosa é <em>“Lira dos Vinte Anos”</em>, uma coletânea de
-        poemas que revela tanto o idealismo amoroso quanto o humor irônico e
-        sombrio característico do autor.
-      </p>
+            <h2>Importância</h2>
+            <p>
+              Álvares de Azevedo destacou-se por aprofundar o lado psicológico e
+              emocional da poesia romântica brasileira, tornando-se um símbolo
+              da juventude, do conflito interior e da visão trágica da
+              existência.
+            </p>
 
-      <h2>Importância</h2>
-      <p>
-        Álvares de Azevedo destacou-se por aprofundar o lado psicológico e
-        emocional da poesia romântica brasileira, tornando-se um símbolo da
-        juventude, do conflito interior e da visão trágica da existência.
-      </p>
+            <h2>Curiosidade</h2>
+            <p>
+              Morreu muito jovem, aos 20 anos. Grande parte de sua fama surgiu
+              após sua morte, quando seus amigos publicaram suas obras.
+            </p>
 
-      <h2>Curiosidade</h2>
-      <p>
-        Morreu muito jovem, aos 20 anos. Grande parte de sua fama surgiu após
-        sua morte, quando seus amigos publicaram suas obras.
-      </p>
+            <hr />
+            <h2>Fontes</h2>
 
-      <hr />
-      <h2>Fontes</h2>
+            <ul class="fontes">
+              <li>
+                <a
+                  href="https://brasilescola.uol.com.br/biografia/alvares-azevedo.htm"
+                  >Brasil Escola</a
+                >
+              </li>
+              <li>
+                <a href="https://www.todamateria.com.br/alvares-de-azevedo/"
+                  >Toda Matéria</a
+                >
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
 
-      <ul class="fontes">
-        <li>
-          <a
-            href="https://brasilescola.uol.com.br/biografia/alvares-azevedo.htm"
-            >Brasil Escola</a
-          >
-        </li>
-        <li>
-          <a href="https://www.todamateria.com.br/alvares-de-azevedo/"
-            >Toda Matéria</a
-          >
-        </li>
-      </ul>
-    </main>
-
-    <footer>
-      <h4>Autores:</h4>
-      <ul>
-        <li>
-          Davi Reis Furtado [<a
-            href="https://github.com/davi-furtado"
-            target="_blank"
-            >Github</a
-          >]
-        </li>
-        <li>Nicolas Mangefeste Caldas</li>
-        <li>Arthur Figueiredo Mozella</li>
-      </ul>
+    <footer class="site-footer mt-auto border-top border-secondary-subtle py-4">
+      <div class="container">
+        <h4 class="h6 text-uppercase text-body-tertiary">Autores</h4>
+        <ul class="list-unstyled mb-0">
+          <li>
+            Davi Reis Furtado [<a
+              href="https://github.com/davi-furtado"
+              target="_blank"
+              >Github</a
+            >]
+          </li>
+          <li>Nicolas Mangefeste Caldas</li>
+          <li>Arthur Figueiredo Mozella</li>
+        </ul>
+      </div>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
   </body>

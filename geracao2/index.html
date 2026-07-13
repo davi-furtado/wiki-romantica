@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="pt-BR">
+<html
+  lang="pt-BR"
+  data-bs-theme="dark"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -11,118 +14,151 @@
 
     <link
       rel="stylesheet"
-      href="../css/styles.css"
+      href="../css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="../css/bootstrap.min.css"
+      href="../css/styles.css"
     />
     <link
       rel="icon"
       href="../favicon.ico"
     />
   </head>
-  <body>
-    <header>
-      <span>Wiki Romântica</span>
-      <nav>
-        <a href="../">Início</a>
-        <a href="../geracao1/">1ª Geração</a>
-        <a
-          href="."
-          class="atual"
-          >2ª Geração</a
-        >
-        <a href="../geracao3/">3ª Geração</a>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="site-header border-bottom border-secondary-subtle">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">Wiki Romântica</span>
+          <div
+            class="nav nav-pills ms-auto flex-wrap justify-content-end gap-1"
+          >
+            <a
+              href="../"
+              class="nav-link"
+              >Início</a
+            >
+            <a
+              href="../geracao1/"
+              class="nav-link"
+              >1ª Geração</a
+            >
+            <a
+              href="."
+              class="nav-link atual"
+              aria-current="page"
+              >2ª Geração</a
+            >
+            <a
+              href="../geracao3/"
+              class="nav-link"
+              >3ª Geração</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
 
-    <aside class="sidebar">
-      <a
-        href="."
-        class="ativo"
-        >Sobre a 2ª geração</a
-      >
-      <h3>Autores</h3>
-      <ul>
-        <li>
-          <a href="alvares-de-azevedo.html">Álvares de Azevedo</a>
-        </li>
-        <li>
-          <a href="casimiro-de-abreu.html">Casimiro de Abreu</a>
-        </li>
-      </ul>
-    </aside>
+    <div class="container my-4 my-lg-5">
+      <div class="row g-4">
+        <aside class="col-12 col-lg-4 col-xl-3">
+          <div class="sidebar card border-secondary-subtle h-100">
+            <div class="card-body">
+              <a
+                href="."
+                class="list-group-item list-group-item-action ativo"
+                >Sobre a 2ª geração</a
+              >
+              <h3>Autores</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">
+                  <a href="alvares-de-azevedo.html">Álvares de Azevedo</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="casimiro-de-abreu.html">Casimiro de Abreu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
 
-    <main class="conteudo">
-      <h1>2ª Geração Romântica</h1>
+        <main class="col-12 col-lg-8 col-xl-9">
+          <section class="conteudo p-4 p-lg-5 rounded-4 shadow-sm">
+            <h1>2ª Geração Romântica</h1>
 
-      <p>
-        A <strong>segunda geração do romantismo brasileiro</strong>, também
-        chamada de <strong>ultrarromântica</strong>, desenvolveu-se a partir de
-        meados do século XIX e foi marcada por forte subjetivismo e pessimismo.
-      </p>
+            <p>
+              A <strong>segunda geração do romantismo brasileiro</strong>,
+              também chamada de <strong>ultrarromântica</strong>, desenvolveu-se
+              a partir de meados do século XIX e foi marcada por forte
+              subjetivismo e pessimismo.
+            </p>
 
-      <p>
-        Influenciados pelo romantismo europeu, especialmente por autores como
-        Lord Byron, os escritores dessa fase exploraram temas ligados ao
-        sofrimento existencial, à solidão e à fuga da realidade.
-      </p>
+            <p>
+              Influenciados pelo romantismo europeu, especialmente por autores
+              como Lord Byron, os escritores dessa fase exploraram temas ligados
+              ao sofrimento existencial, à solidão e à fuga da realidade.
+            </p>
 
-      <h2>Características</h2>
-      <ul>
-        <li>Egocentrismo e subjetivismo</li>
-        <li>Pessimismo e melancolia</li>
-        <li>Idealização amorosa</li>
-        <li>Fuga da realidade (escapismo)</li>
-        <li>Obsessão pela morte</li>
-      </ul>
+            <h2>Características</h2>
+            <ul>
+              <li>Egocentrismo e subjetivismo</li>
+              <li>Pessimismo e melancolia</li>
+              <li>Idealização amorosa</li>
+              <li>Fuga da realidade (escapismo)</li>
+              <li>Obsessão pela morte</li>
+            </ul>
 
-      <h2>Temas recorrentes</h2>
-      <p>
-        Os autores ultrarromânticos frequentemente abordavam o amor não
-        correspondido, a angústia existencial e a insatisfação com o mundo real.
-        Muitas vezes, a morte era vista como forma de libertação.
-      </p>
+            <h2>Temas recorrentes</h2>
+            <p>
+              Os autores ultrarromânticos frequentemente abordavam o amor não
+              correspondido, a angústia existencial e a insatisfação com o mundo
+              real. Muitas vezes, a morte era vista como forma de libertação.
+            </p>
 
-      <h2>Importância</h2>
-      <p>
-        Essa geração aprofundou o lirismo subjetivo na literatura brasileira e
-        contribuiu para o desenvolvimento de uma poesia mais introspectiva e
-        emocional.
-      </p>
+            <h2>Importância</h2>
+            <p>
+              Essa geração aprofundou o lirismo subjetivo na literatura
+              brasileira e contribuiu para o desenvolvimento de uma poesia mais
+              introspectiva e emocional.
+            </p>
 
-      <hr />
-      <h2>Fontes</h2>
+            <hr />
+            <h2>Fontes</h2>
 
-      <ul class="fontes">
-        <li>
-          <a
-            href="https://brasilescola.uol.com.br/literatura/ultra-romantismo.htm"
-            >Brasil Escola</a
-          >
-        </li>
-        <li>
-          <a href="https://www.todamateria.com.br/segunda-geracao-romantica/"
-            >Toda Matéria</a
-          >
-        </li>
-      </ul>
-    </main>
+            <ul class="fontes">
+              <li>
+                <a
+                  href="https://brasilescola.uol.com.br/literatura/ultra-romantismo.htm"
+                  >Brasil Escola</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.todamateria.com.br/segunda-geracao-romantica/"
+                  >Toda Matéria</a
+                >
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
 
-    <footer>
-      <h4>Autores:</h4>
-      <ul>
-        <li>
-          Davi Reis Furtado [<a
-            href="https://github.com/davi-furtado"
-            target="_blank"
-            >Github</a
-          >]
-        </li>
-        <li>Nicolas Mangefeste Caldas</li>
-        <li>Arthur Figueiredo Mozella</li>
-      </ul>
+    <footer class="site-footer mt-auto border-top border-secondary-subtle py-4">
+      <div class="container">
+        <h4 class="h6 text-uppercase text-body-tertiary">Autores</h4>
+        <ul class="list-unstyled mb-0">
+          <li>
+            Davi Reis Furtado [<a
+              href="https://github.com/davi-furtado"
+              target="_blank"
+              >Github</a
+            >]
+          </li>
+          <li>Nicolas Mangefeste Caldas</li>
+          <li>Arthur Figueiredo Mozella</li>
+        </ul>
+      </div>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
   </body>

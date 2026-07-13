@@ -1,157 +1,130 @@
+:root {
+  --wiki-bg: #090b14;
+  --wiki-surface: #11172a;
+  --wiki-surface-alt: #18213a;
+  --wiki-border: #2a365d;
+  --wiki-link: #9fb6ff;
+  --wiki-link-hover: #d2ddff;
+  --wiki-active: #314dae;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Gill Sans', Calibri, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #f2f2f2;
-  line-height: 1.6;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  line-height: 1.7;
+  background: radial-gradient(circle at top, #1a2550 0%, var(--wiki-bg) 36%);
+  color: #edf1ff;
 }
 
-/* LINKS */
 a {
-  color: #ccc;
+  color: var(--wiki-link);
   text-decoration: none;
-  transition: 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 a:hover {
-  color: #fff;
+  color: var(--wiki-link-hover);
 }
 
-/* HEADER */
-header {
-  background-color: #0d1b4c;
-  padding: 1rem;
+.site-header {
+  background: rgba(8, 12, 25, 0.88);
+  backdrop-filter: blur(8px);
 }
 
-/* TÍTULO */
-header span {
-  font-size: 1.6rem;
-  font-weight: bold;
-  width: 30%;
-  float: left;
+.navbar-brand {
+  letter-spacing: 0.04em;
+  color: #f8f9ff;
 }
 
-/* MENU */
-nav {
-  width: 70%;
-  float: right;
-  text-align: right;
+.site-header .nav-link {
+  color: #c4cff7;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
 }
 
-header nav a {
-  padding: 8px 12px;
-  margin-left: 5px;
-  border-radius: 6px;
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible {
+  color: #ffffff;
+  background-color: rgba(49, 77, 174, 0.35);
 }
 
-/* LINK ATUAL */
-.atual {
-  background-color: #1c2fa3;
-  color: #fff;
+.site-header .nav-link.atual {
+  color: #ffffff;
+  background-color: var(--wiki-active);
 }
 
-/* CLEAR FIX HEADER */
-header::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* HOME */
-.principal {
-  clear: both;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.principal h1 {
-  margin-bottom: 1rem;
-}
-
-.principal ul {
-  margin: 1rem 0 1rem 1.5rem;
-}
-
-/* LAYOUT INTERNO */
-
-/* SIDEBAR */
-.sidebar {
-  width: 25%;
-  float: left;
-  padding: 1rem;
-  background-color: #111;
-  min-height: 500px;
-  border-right: 1px solid #222;
-}
-
-.sidebar h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1rem;
-  color: #aaa;
-  text-transform: uppercase;
-}
-
-/* LISTA */
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  margin-bottom: 4px;
-}
-
-/* LINKS SIDEBAR */
-.sidebar a {
-  display: block;
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  word-break: break-word;
-}
-
-/* HOVER */
-.sidebar a:hover {
-  background-color: #1c2fa3;
-  transform: translateX(6px);
-  color: #fff;
-}
-
-/* LINK ATIVO */
-.ativo {
-  background-color: #2e44ff;
-  color: #fff;
-  transform: translateX(10px);
-  font-weight: bold;
-}
-
-/* CONTEÚDO */
+.principal,
 .conteudo {
-  width: 75%;
-  float: right;
-  padding: 2rem;
-  word-wrap: break-word;
+  background-color: rgba(17, 23, 42, 0.88);
+  border: 1px solid var(--wiki-border);
 }
 
-/* TEXTO */
+.principal h1,
 .conteudo h1 {
   margin-bottom: 1rem;
 }
 
+.principal p,
 .conteudo p {
   margin-bottom: 1rem;
 }
 
+.principal ul,
 .conteudo ul {
   margin: 1rem 0 1rem 1.5rem;
 }
 
-/* FONTES */
+.sidebar {
+  background-color: rgba(24, 33, 58, 0.88);
+}
+
+.sidebar h3 {
+  margin: 1rem 0 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #95a4d6;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.sidebar .list-group-item {
+  border: none;
+  border-radius: 0.6rem;
+  margin-bottom: 0.35rem;
+  background: transparent;
+  padding: 0;
+}
+
+.sidebar .list-group-item a,
+.sidebar > .card-body > a {
+  display: block;
+  color: #cad3f3;
+  border-radius: 0.6rem;
+  padding: 0.45rem 0.7rem;
+}
+
+.sidebar .list-group-item a:hover,
+.sidebar > .card-body > a:hover {
+  color: #ffffff;
+  background-color: rgba(49, 77, 174, 0.38);
+  transform: translateX(4px);
+}
+
+.sidebar .ativo {
+  background-color: rgba(49, 77, 174, 0.7);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sidebar .ativo:hover {
+  transform: none;
+}
 
 .fontes {
   margin-top: 2rem;
@@ -160,94 +133,38 @@ header::after {
 
 .fontes li {
   margin-bottom: 0.6rem;
-  font-size: 0.95rem;
   line-height: 1.4;
 }
 
 .fontes a {
-  color: #9db4ff;
-  word-break: break-word; /* ✅ resolve mobile */
+  word-break: break-word;
 }
 
 .fontes a:hover {
   text-decoration: underline;
 }
 
-/* CLEAR */
-.conteudo::after {
-  content: '';
-  display: block;
-  clear: both;
+.site-footer {
+  background: rgba(8, 12, 25, 0.8);
 }
 
-/* FOOTER */
-footer {
-  clear: both;
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #111;
-  border-top: 1px solid #222;
-}
-
-footer h4 {
-  margin-bottom: 0.5rem;
-}
-
-footer ul {
-  list-style: none;
-}
-
-footer li {
-  margin: 0.4rem 0;
+.site-footer li {
+  margin: 0.35rem 0;
 }
 
 hr {
-  margin: 1rem 0;
+  border-color: var(--wiki-border);
 }
 
-/* TELAS MENORES  */
-@media (max-width: 800px) {
-  /* HEADER */
-  header span {
+@media (max-width: 991.98px) {
+  .navbar-brand {
     width: 100%;
-    float: none;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.65rem;
   }
 
-  nav {
+  .site-header .nav {
     width: 100%;
-    float: none;
-    text-align: center;
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 5px;
-  }
-
-  /* SIDEBAR VIRA TOPO */
-  .sidebar {
-    width: 100%;
-    float: none;
-    min-height: auto;
-    border-right: none;
-    border-bottom: 1px solid #222;
-  }
-
-  /* CONTEÚDO ABAIXO */
-  .conteudo {
-    width: 100%;
-    float: none;
-    padding: 1.5rem;
-  }
-
-  .principal {
-    padding: 1.5rem;
-  }
-
-  /* FONTES */
-  .fontes li {
-    font-size: 0.9rem;
+    justify-content: center;
   }
 }

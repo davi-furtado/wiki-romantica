@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="pt-BR">
+<html
+  lang="pt-BR"
+  data-bs-theme="dark"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -11,11 +14,11 @@
 
     <link
       rel="stylesheet"
-      href="css/styles.css"
+      href="css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="css/bootstrap.min.css"
+      href="css/styles.css"
     />
     <link
       rel="icon"
@@ -23,18 +26,42 @@
     />
   </head>
 
-  <body>
-    <header>
-      <span>Wiki Romântica</span>
-      <nav>
-        <a href="/">Início</a>
-        <a href="/geracao1/">1ª Geração</a>
-        <a href="/geracao2/">2ª Geração</a>
-        <a href="/geracao3/">3ª Geração</a>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="site-header border-bottom border-secondary-subtle">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">Wiki Romântica</span>
+          <div
+            class="nav nav-pills ms-auto flex-wrap justify-content-end gap-1"
+          >
+            <a
+              href="./"
+              class="nav-link"
+              >Início</a
+            >
+            <a
+              href="geracao1/"
+              class="nav-link"
+              >1ª Geração</a
+            >
+            <a
+              href="geracao2/"
+              class="nav-link"
+              >2ª Geração</a
+            >
+            <a
+              href="geracao3/"
+              class="nav-link"
+              >3ª Geração</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main class="principal">
+    <main
+      class="principal container my-4 my-lg-5 p-4 p-lg-5 rounded-4 shadow-sm"
+    >
       <h1>Erro 404</h1>
 
       <p>
@@ -51,19 +78,21 @@
       </p>
     </main>
 
-    <footer>
-      <h4>Autores:</h4>
-      <ul>
-        <li>
-          Davi Reis Furtado [<a
-            href="https://github.com/davi-furtado"
-            target="_blank"
-            >Github</a
-          >]
-        </li>
-        <li>Nicolas Mangefeste Caldas</li>
-        <li>Arthur Figueiredo Mozella</li>
-      </ul>
+    <footer class="site-footer mt-auto border-top border-secondary-subtle py-4">
+      <div class="container">
+        <h4 class="h6 text-uppercase text-body-tertiary">Autores</h4>
+        <ul class="list-unstyled mb-0">
+          <li>
+            Davi Reis Furtado [<a
+              href="https://github.com/davi-furtado"
+              target="_blank"
+              >Github</a
+            >]
+          </li>
+          <li>Nicolas Mangefeste Caldas</li>
+          <li>Arthur Figueiredo Mozella</li>
+        </ul>
+      </div>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
