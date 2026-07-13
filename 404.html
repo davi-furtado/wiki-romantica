@@ -12,18 +12,33 @@
 
     <title>Erro 404 | Wiki Romântica</title>
 
-    <link
-      rel="stylesheet"
-      href="./css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/styles.css"
-    />
-    <link
-      rel="icon"
-      href="./favicon.ico"
-    />
+    <script>
+      ;(function () {
+        const segments = window.location.pathname.split('/').filter(Boolean)
+        const basePath = segments.length ? '/' + segments[0] + '/' : '/'
+
+        window.__wikiBasePath = basePath
+
+        const styles = ['css/bootstrap.min.css', 'css/styles.css']
+
+        for (const style of styles) {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = basePath + style
+          document.head.appendChild(link)
+        }
+
+        const icon = document.createElement('link')
+        icon.rel = 'icon'
+        icon.href = basePath + 'favicon.ico'
+        document.head.appendChild(icon)
+
+        const bootstrapScript = document.createElement('script')
+        bootstrapScript.src = basePath + 'js/bootstrap.min.js'
+        bootstrapScript.defer = true
+        document.head.appendChild(bootstrapScript)
+      })()
+    </script>
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -50,22 +65,26 @@
               class="nav nav-pills ms-auto flex-column flex-lg-row justify-content-end gap-1 pt-3 pt-lg-0"
             >
               <a
-                href="./"
+                href="#"
+                data-base-href=""
                 class="nav-link"
                 >Início</a
               >
               <a
-                href="./geracao1/"
+                href="#"
+                data-base-href="geracao1/"
                 class="nav-link"
                 >1ª Geração</a
               >
               <a
-                href="./geracao2/"
+                href="#"
+                data-base-href="geracao2/"
                 class="nav-link"
                 >2ª Geração</a
               >
               <a
-                href="./geracao3/"
+                href="#"
+                data-base-href="geracao3/"
                 class="nav-link"
                 >3ª Geração</a
               >
@@ -90,7 +109,11 @@
       <p>Talvez ela tenha sido movida ou não exista.</p>
 
       <p>
-        <a href=".">← Voltar para a página inicial</a>
+        <a
+          href="#"
+          data-base-href=""
+          >← Voltar para a página inicial</a
+        >
       </p>
     </main>
 
@@ -111,6 +134,14 @@
       </div>
     </footer>
 
-    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      ;(function () {
+        const basePath = window.__wikiBasePath || '/'
+        document.querySelectorAll('[data-base-href]').forEach(link => {
+          const target = link.getAttribute('data-base-href') || ''
+          link.setAttribute('href', basePath + target)
+        })
+      })()
+    </script>
   </body>
 </html>
