@@ -14,13 +14,10 @@
 
     <script>
       ;(function () {
-        const segments = window.location.pathname.split('/').filter(Boolean)
-        const basePath = segments.length ? '/' + segments[0] + '/' : '/'
-
+        const basePath = '/wiki-romantica/' // caso rodando em local, altere para '/'
         window.__wikiBasePath = basePath
 
         const styles = ['css/bootstrap.min.css', 'css/styles.css']
-
         for (const style of styles) {
           const link = document.createElement('link')
           link.rel = 'stylesheet'
@@ -35,7 +32,6 @@
 
         const bootstrapScript = document.createElement('script')
         bootstrapScript.src = basePath + 'js/bootstrap.min.js'
-        bootstrapScript.defer = true
         document.head.appendChild(bootstrapScript)
       })()
     </script>
