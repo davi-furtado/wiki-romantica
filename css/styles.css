@@ -1,11 +1,7 @@
 :root {
   --wiki-bg: #090b14;
-  --wiki-surface: #11172a;
-  --wiki-surface-alt: #18213a;
-  --wiki-border: #2a365d;
   --wiki-link: #9fb6ff;
   --wiki-link-hover: #d2ddff;
-  --wiki-active: #314dae;
 }
 
 * {
@@ -19,145 +15,33 @@ body {
   color: #edf1ff;
 }
 
+.navbar-brand {
+  letter-spacing: 0.04em;
+}
+
+.site-header,
+.site-footer,
+.conteudo,
+.principal,
+.sidebar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(8, 12, 25, 0.78);
+}
+
 a {
   color: var(--wiki-link);
-  text-decoration: none;
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease,
-    transform 0.2s ease;
 }
 
 a:hover {
   color: var(--wiki-link-hover);
 }
 
-.site-header {
-  background: rgba(8, 12, 25, 0.88);
-  backdrop-filter: blur(8px);
-}
-
-.navbar-brand {
-  letter-spacing: 0.04em;
-  color: #f8f9ff;
-}
-
-.site-header .nav-link {
-  color: #c4cff7;
-  border-radius: 999px;
-  padding: 0.4rem 0.95rem;
-}
-
-.site-header .nav-link:hover,
-.site-header .nav-link:focus-visible {
-  color: #ffffff;
-  background-color: rgba(49, 77, 174, 0.35);
-}
-
-.site-header .nav-link.atual {
-  color: #ffffff;
-  background-color: var(--wiki-active);
-}
-
-.principal,
-.conteudo {
-  background-color: rgba(17, 23, 42, 0.88);
-  border: 1px solid var(--wiki-border);
-}
-
-.principal h1,
-.conteudo h1 {
-  margin-bottom: 1rem;
-}
-
-.principal p,
-.conteudo p {
-  margin-bottom: 1rem;
-}
-
-.principal ul,
-.conteudo ul {
-  margin: 1rem 0 1rem 1.5rem;
-}
-
 .autor-foto {
   max-width: 280px;
 }
 
-.sidebar {
-  background-color: rgba(24, 33, 58, 0.88);
-}
-
-.sidebar h3 {
-  margin: 1rem 0 0.55rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #95a4d6;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
-
-.sidebar .list-group-item {
-  border: none;
-  border-radius: 0.6rem;
-  margin-bottom: 0.35rem;
-  background: transparent;
-  padding: 0;
-}
-
-.sidebar .list-group-item a,
-.sidebar > .card-body > a {
-  display: block;
-  color: #cad3f3;
-  border-radius: 0.6rem;
-  padding: 0.45rem 0.7rem;
-}
-
-.sidebar .list-group-item a:hover,
-.sidebar > .card-body > a:hover {
-  color: #ffffff;
-  background-color: rgba(49, 77, 174, 0.38);
-  transform: translateX(4px);
-}
-
-.sidebar .ativo {
-  background-color: rgba(49, 77, 174, 0.7);
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.sidebar .ativo:hover {
-  transform: none;
-}
-
-.fontes {
-  margin-top: 2rem;
-  padding-left: 1.2rem;
-}
-
-.fontes li {
-  margin-bottom: 0.6rem;
-  line-height: 1.4;
-}
-
-.fontes a {
-  word-break: break-word;
-}
-
-.fontes a:hover {
-  text-decoration: underline;
-}
-
-.site-footer {
-  background: rgba(8, 12, 25, 0.8);
-}
-
-.site-footer li {
-  margin: 0.35rem 0;
-}
-
-hr {
-  border-color: var(--wiki-border);
+.text-body-tertiary {
+  color: #95a4d6 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -167,7 +51,8 @@ hr {
     margin-bottom: 0.65rem;
   }
 
-  .site-header .nav {
+  .site-header .nav,
+  .site-header .nav-pills {
     width: 100%;
     justify-content: center;
   }
