@@ -1,0 +1,59 @@
+:root {
+  --wiki-bg: #090b14;
+  --wiki-link: #9fb6ff;
+  --wiki-link-hover: #d2ddff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  line-height: 1.7;
+  background: radial-gradient(circle at top, #1a2550 0%, var(--wiki-bg) 36%);
+  color: #edf1ff;
+}
+
+.navbar-brand {
+  letter-spacing: 0.04em;
+}
+
+.site-header,
+.site-footer,
+.conteudo,
+.principal,
+.sidebar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(8, 12, 25, 0.78);
+}
+
+a {
+  color: var(--wiki-link);
+}
+
+a:hover {
+  color: var(--wiki-link-hover);
+}
+
+.autor-foto {
+  max-width: 280px;
+}
+
+.text-body-tertiary {
+  color: #95a4d6 !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.65rem;
+  }
+
+  .site-header .nav,
+  .site-header .nav-pills {
+    width: 100%;
+    justify-content: center;
+  }
+}
