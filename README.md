@@ -1,7 +1,11 @@
 # Wiki Romântica
 
 <div align="center">
-  <img src="https://img.shields.io/badge/bootstrap-7952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-7952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 </div>
 
 Pequena wiki sobre as 3 gerações do romantismo em verso no Brasil feita com HTML, CSS e Bootstrap como trabalho para as disciplinas de _Técnicas de Desenvolvimento de Software I_ e _Língua Portuguesa e Literatura II_.
