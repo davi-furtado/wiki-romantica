@@ -7,22 +7,15 @@
     <title>Erro 404 | Wiki Romântica</title>
 
     <script defer>
-      ;(function () {
+      ;(() => {
         const basePath = location.pathname.startsWith('/wiki-romantica')
           ? '/wiki-romantica/'
           : '/'
         window.__wikiBasePath = basePath
 
-        for (const href of ['css/bootstrap.min.css', 'css/styles.css']) {
-          const link = document.createElement('link')
-          link.rel = 'stylesheet'
-          link.href = basePath + href
-          document.head.appendChild(link)
-        }
-
         const icon = document.createElement('link')
         icon.rel = 'icon'
-        icon.href = basePath + 'favicon.ico'
+        icon.href = `${basePath}favicon.ico`
         document.head.appendChild(icon)
       })()
     </script>
@@ -105,11 +98,12 @@
     </footer>
 
     <script>
-      ;(function () {
+      ;(() => {
         const basePath = window.__wikiBasePath
-        const bootstrap = document.createElement('script')
-        bootstrap.src = basePath + 'js/bootstrap.bundle.min'
-        document.body.appendChild(bootstrap)
+        const script = document.createElement('script')
+        script.type = 'module'
+        script.src = `${basePath}src/main.js`
+        document.body.appendChild(script)
 
         document.querySelectorAll('[data-base-href]').forEach(link => {
           link.href = basePath + (link.dataset.baseHref)
