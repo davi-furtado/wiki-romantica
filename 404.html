@@ -28,7 +28,7 @@
     </script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100">
+  <body id="body" class="d-flex flex-column min-vh-100">
     <header
       class="site-header border-bottom border-secondary-subtle bg-dark bg-opacity-75"
     >
@@ -50,14 +50,14 @@
             <div
               class="nav nav-pills ms-auto flex-column flex-lg-row justify-content-end gap-1 pt-3 pt-lg-0"
             >
-              <a href="#" data-base-href="" class="nav-link">Início</a>
-              <a href="#" data-base-href="geracao1/" class="nav-link"
+              <a href="#body" data-base-href="" class="nav-link">Início</a>
+              <a href="#body" data-base-href="geracao1/" class="nav-link"
                 >1ª Geração</a
               >
-              <a href="#" data-base-href="geracao2/" class="nav-link"
+              <a href="#body" data-base-href="geracao2/" class="nav-link"
                 >2ª Geração</a
               >
-              <a href="#" data-base-href="geracao3/" class="nav-link"
+              <a href="#body" data-base-href="geracao3/" class="nav-link"
                 >3ª Geração</a
               >
             </div>
@@ -81,7 +81,7 @@
       <p>Talvez ela tenha sido movida ou não exista.</p>
 
       <p>
-        <a href="#" data-base-href="">← Voltar para a página inicial</a>
+        <a href="#body" data-base-href="">← Voltar para a página inicial</a>
       </p>
     </main>
 
@@ -106,13 +106,13 @@
 
     <script>
       ;(function () {
-        const basePath = window.__wikiBasePath || '/'
+        const basePath = window.__wikiBasePath
         const bootstrap = document.createElement('script')
         bootstrap.src = basePath + 'js/bootstrap.bundle.min'
         document.body.appendChild(bootstrap)
 
         document.querySelectorAll('[data-base-href]').forEach(link => {
-          link.href = basePath + (link.dataset.baseHref || '')
+          link.href = basePath + (link.dataset.baseHref)
         })
       })()
     </script>
