@@ -97,14 +97,10 @@
       </div>
     </footer>
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       ;(() => {
         const basePath = window.__wikiBasePath
-        const script = document.createElement('script')
-        script.type = 'module'
-        script.src = `${basePath}src/main.js`
-        document.body.appendChild(script)
-
         document.querySelectorAll('[data-base-href]').forEach(link => {
           link.href = basePath + (link.dataset.baseHref)
         })

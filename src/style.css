@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-family: "Gill Sans", Calibri, sans-serif;
   line-height: 1.7;
   background: radial-gradient(circle at top, #1a2550 0%, var(--wiki-bg) 36%);
   color: #edf1ff;
@@ -41,7 +41,7 @@ a:hover {
 }
 
 .text-body-tertiary {
-  color: #95a4d6 !important;
+  color: #95a4d6;
 }
 
 @media (max-width: 991.98px) {
