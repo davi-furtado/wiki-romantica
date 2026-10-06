@@ -88,9 +88,23 @@
       const wikiBasePath = location.pathname.startsWith('/wiki-romantica')
         ? '/wiki-romantica/'
         : '/'
-      const script = document.createElement('script')
-      script.src = `${wikiBasePath}js/404.js`
-      document.body.appendChild(script)
+      const wikiAppendLink = (rel, href) => {
+        const link = document.createElement('link')
+        link.rel = rel
+        link.href = `${wikiBasePath}${href}`
+        document.head.appendChild(link)
+      }
+      const wikiAppendScript = (src) => {
+        const script = document.createElement('script')
+        script.src = `${wikiBasePath}${src}`
+        document.body.appendChild(script)
+      }
+
+      wikiAppendLink('icon', 'favicon.ico')
+      wikiAppendLink('stylesheet', 'css/bootstrap.min.css')
+      wikiAppendLink('stylesheet', 'css/style.css')
+      wikiAppendScript('js/404.js')
+      wikiAppendScript('js/bootstrap.bundle.min.js')
     </script>
   </body>
 </html>
