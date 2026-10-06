@@ -14,21 +14,23 @@ Acesse o site [aqui](https://davi-furtado.github.io/wiki-romantica)
 
 ## Desenvolvimento
 
-Para rodar, abra o terminal e execute os seguintes comandos:
+Para preparar os arquivos fornecidos pelo Bootstrap e rodar localmente, abra o terminal e execute:
 
 ```bash
 git clone https://github.com/davi-furtado/wiki-romantica.git
 cd wiki-romantica
 npm install
-npm run dev
+npm run prepare-assets
+python -m http.server
 ```
 
-Em seguida, abra o navegador e acesse `http://localhost:5173`.
+Em seguida, abra o navegador e acesse `http://localhost:8000`.
 
-O deploy é feito automaticamente no GitHub Pages a cada push na branch `main`.
+O projeto é HTML puro: não depende de Vite durante o desenvolvimento ou o deploy. O Bootstrap é instalado pelo npm e copiado para `css/` e `js/`; o workflow do GitHub Pages publica os arquivos estáticos da raiz a cada push na branch `main`.
 
 ## Autores
 
 - Davi Reis Furtado
 - Arthur Figueiredo Mozella
 - Nicolas Mangefeste Caldas
+
