@@ -10,17 +10,18 @@ const themeToggle = document.querySelector('#theme-toggle')
 const savedTheme =
   localStorage.getItem('wiki-theme') ||
   localStorage.getItem('tema') ||
-  (window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light')
+  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
 
 const renderTheme = (theme) => {
   const isDark = theme === 'dark'
-  document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light')
+  document.documentElement.setAttribute(
+    'data-bs-theme',
+    isDark ? 'dark' : 'light'
+  )
   themeToggle.textContent = isDark ? '☀' : '☾'
   themeToggle.setAttribute(
     'aria-label',
-    isDark ? 'Mudar para modo claro' : 'Mudar para modo escuro',
+    isDark ? 'Mudar para modo claro' : 'Mudar para modo escuro'
   )
   themeToggle.title = isDark
     ? 'Mudar para modo claro'
