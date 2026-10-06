@@ -92,18 +92,18 @@
     </footer>
 
     <script>
-      const wikiBasePath = location.pathname.startsWith('/wiki-romantica')
+      const wikiAssetBasePath = location.pathname.startsWith('/wiki-romantica')
         ? '/wiki-romantica/'
         : '/'
       const wikiAppendLink = (rel, href) => {
         const link = document.createElement('link')
         link.rel = rel
-        link.href = `${wikiBasePath}${href}`
+        link.href = `${wikiAssetBasePath}${href}`
         document.head.appendChild(link)
       }
       const wikiAppendScript = (src) => {
         const script = document.createElement('script')
-        script.src = `${wikiBasePath}${src}`
+        script.src = `${wikiAssetBasePath}${src}`
         document.body.appendChild(script)
       }
 
