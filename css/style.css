@@ -15,6 +15,11 @@ body {
   color: #edf1ff;
 }
 
+body.not-found-page {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
 .navbar-brand {
   letter-spacing: 0.04em;
 }
